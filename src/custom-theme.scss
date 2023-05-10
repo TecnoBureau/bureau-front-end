@@ -1,35 +1,118 @@
+@use "@angular/material" as mat;
 
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
-// Plus imports for other components in your app.
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
 @include mat.core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$bureau-primary: mat.define-palette(mat.$indigo-palette);
-$bureau-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$bureau-primary: (
+  50: #e7f8f9,
+  100: #c6edf0,
+  200: #a0e3e9,
+  300: #7bd9e2,
+  400: #66d0dc,
+  500: #5dc8d7,
+  600: #57b8c4,
+  700: #4fa2ab,
+  800: #488e93,
+  900: #3a6a6a,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #c6edf0,
+  A700: #006064,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
 
-// The warn palette is optional (defaults to red).
-$bureau-warn: mat.define-palette(mat.$red-palette);
+$bureau-accent: (
+  50: #e0f6f9,
+  100: #b3eaf1,
+  200: #83dce8,
+  300: #55cdde,
+  400: #39c3d6,
+  500: #2bb8cf,
+  600: #28a8bc,
+  700: #2493a2,
+  800: #217f8a,
+  900: #1a5c60,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #28a8bc,
+  A700: #007b91,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
 
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$bureau-theme: mat.define-light-theme((
-  color: (
-    primary: $bureau-primary,
-    accent: $bureau-accent,
-    warn: $bureau-warn,
+$bureau-warn: (
+  50: #ffeaef,
+  100: #ffcbd3,
+  200: #f9969a,
+  300: #f36c72,
+  400: #ff444d,
+  500: #ff2830,
+  600: #f61931,
+  700: #e4012c,
+  800: #d70023,
+  900: #c90014,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #e4012c,
+  A700: #b9001a,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$bureau-palette-primary: mat.define-palette($bureau-primary, 100);
+$bureau-palette-accent: mat.define-palette($bureau-accent, 600);
+$bureau-palette-warn: mat.define-palette($bureau-warn, 700);
+
+$bureau-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $bureau-palette-primary,
+      accent: $bureau-palette-accent,
+      warn: $bureau-palette-warn,
+    ),
   )
-));
+);
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
 @include mat.all-component-themes($bureau-theme);
-
