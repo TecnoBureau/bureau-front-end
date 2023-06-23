@@ -7,14 +7,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactComponent } from './contact/contact.component';
+import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, InscriptionsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,9 +22,10 @@ import { AppComponent } from './app.component';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    MatCardModule
+    MatCardModule,
+    ContactComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
