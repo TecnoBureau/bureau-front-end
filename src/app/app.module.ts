@@ -13,7 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 
 @NgModule({
-  declarations: [AppComponent, InscriptionsComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +24,7 @@ import { InscriptionsComponent } from './inscriptions/inscriptions.component';
     MatTooltipModule,
     MatCardModule,
     ContactComponent,
+    InscriptionsComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
