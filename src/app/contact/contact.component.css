@@ -7,6 +7,12 @@
   background: url("src/assets/wave.svg") no-repeat bottom;
 }
 
+mat-divider {
+  border-top-width: 5px;
+  background-color: #c6edf0;
+  max-width: 200px;
+}
+
 mat-card {
   background-color: #28a8bc;
 }

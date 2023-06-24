@@ -9,7 +9,6 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContainerComponent } from './ui/container/container.component';
 import { ContactComponent } from './contact/contact.component';
 import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 
@@ -24,7 +23,6 @@ import { InscriptionsComponent } from './inscriptions/inscriptions.component';
     MatButtonModule,
     MatTooltipModule,
     MatCardModule,
-    ContainerComponent,
     ContactComponent,
     InscriptionsComponent,
   ],

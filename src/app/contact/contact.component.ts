@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-contact',
@@ -22,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
     NgIf,
     MatCardModule,
     MatButtonModule,
+    MatDividerModule,
   ],
 })
 export class ContactComponent implements OnInit {
