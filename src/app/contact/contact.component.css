@@ -7,10 +7,6 @@
   background: url("src/assets/wave.svg") no-repeat bottom;
 }
 
-h2 {
-  font-size: 26px;
-}
-
 mat-card {
   background-color: #28a8bc;
 }

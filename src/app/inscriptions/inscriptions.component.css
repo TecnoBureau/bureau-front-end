@@ -1,0 +1,15 @@
+mat-divider {
+  border-top-width: 5px;
+  background-color: #fff;
+}
+
+button {
+  width: 200px;
+}
+
+.image-inscriptions {
+  background: url("src/assets/imagem-inscricoes.png") no-repeat bottom;
+  background-size: contain;
+  width: 50%;
+  height: 80%;
+}
