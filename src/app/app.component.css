@@ -1,0 +1,17 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-full-sTool {
+  height: calc(100% - 64px);
+}
