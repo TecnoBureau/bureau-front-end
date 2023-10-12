@@ -11,9 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { InscriptionsComponent } from './inscriptions/inscriptions.component';
+import { PartnersComponent } from './partners/partners.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PartnersComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
