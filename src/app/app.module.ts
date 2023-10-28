@@ -14,7 +14,7 @@ import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 import { PartnersComponent } from './partners/partners.component';
 
 @NgModule({
-  declarations: [AppComponent, PartnersComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +26,7 @@ import { PartnersComponent } from './partners/partners.component';
     MatCardModule,
     ContactComponent,
     InscriptionsComponent,
+    PartnersComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

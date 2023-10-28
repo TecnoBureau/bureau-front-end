@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2rem 4rem 0rem;
+  background: url("src/assets/wave2.svg") no-repeat bottom;
+}
+
+mat-divider {
+  border-top-width: 5px;
+  background-color: #c6edf0;
+  max-width: 200px;
+}
+
+mat-card {
+  background-color: #28a8bc;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-card-content {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+button {
+  width: 100px;
+}
+
+.image-contact {
+  background: url("src/assets/imagem-entre-contato.png") no-repeat bottom;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
