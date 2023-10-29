@@ -38,6 +38,27 @@ button {
   height: 100%;
 }
 
+.logo-cmd{
+  background: url("src/assets/logos/logo-cmd.png");
+  background-size: cover;
+  
+}
+
+.logo-ribeirao{
+  background: url("src/assets/logos/brasao-pref-ribeirao.png");
+  background-size: cover;
+  
+}
+
+.logo-carrancas{
+  background: url("src/assets/logos/brasao-pref-carrancas.png");
+  background-size: cover;
+  
+}
+
 mat-grid-tile {
   background: lightblue;
+  border-width: 3px;
+  border-color: black;
+  
 }
