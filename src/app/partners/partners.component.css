@@ -1,5 +1,4 @@
 .container {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
@@ -31,6 +30,9 @@ button {
   width: 100px;
 }
 
+
+
+
 .image-contact {
   background: url("src/assets/imagem-entre-contato.png") no-repeat bottom;
   background-size: cover;
@@ -39,9 +41,8 @@ button {
 }
 
 .logo-cmd{
-  background: url("src/assets/logos/logo-cmd.png");
-  background-size: cover;
-  
+  width: 200;
+  height: 400;
 }
 
 .logo-ribeirao{
@@ -58,7 +59,21 @@ button {
 
 mat-grid-tile {
   background: lightblue;
-  border-width: 3px;
-  border-color: black;
   
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  width: 100%;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
 }
