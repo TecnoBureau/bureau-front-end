@@ -30,9 +30,6 @@ button {
   width: 100px;
 }
 
-
-
-
 .image-contact {
   background: url("src/assets/imagem-entre-contato.png") no-repeat bottom;
   background-size: cover;
@@ -40,26 +37,23 @@ button {
   height: 100%;
 }
 
-.logo-cmd{
+.logo-cmd {
   width: 200;
   height: 400;
 }
 
-.logo-ribeirao{
+.logo-ribeirao {
   background: url("src/assets/logos/brasao-pref-ribeirao.png");
   background-size: cover;
-  
 }
 
-.logo-carrancas{
+.logo-carrancas {
   background: url("src/assets/logos/brasao-pref-carrancas.png");
   background-size: cover;
-  
 }
 
 mat-grid-tile {
   background: lightblue;
-  
 }
 
 .grid {
@@ -76,4 +70,15 @@ mat-grid-tile {
 .grid-item img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+  transition: transform 0.3s;
+  width: 200px;
+}
+
+.grid-item img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 15%;
+  z-index: 1;
 }
