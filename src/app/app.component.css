@@ -15,20 +15,21 @@
 .h-full-sTool {
   height: calc(100% - 64px);
 }
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); */
 
 :root {
   --color-neutral-0: #007b91;
   --color-neutral-10: #f5f5f5;
 }
 
-* {
+/* {
   font-family: "Aboreto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 1px;
 }
+*/
 
 footer {
   width: 100%;
