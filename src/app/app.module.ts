@@ -11,9 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { InscriptionsComponent } from './inscriptions/inscriptions.component';
+import { PartnersComponent } from './partners/partners.component';
+import { PartnerComponent } from './views/partner/partner.component';
+import { LandingPageComponent } from './views/landing-page/landing-page.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LandingPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +28,8 @@ import { InscriptionsComponent } from './inscriptions/inscriptions.component';
     MatCardModule,
     ContactComponent,
     InscriptionsComponent,
+    PartnersComponent,
+    PartnerComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

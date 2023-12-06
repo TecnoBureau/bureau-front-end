@@ -1,0 +1,54 @@
+<div class="container">
+  <div>
+    <mat-card class="example-card1">
+      <img [src]="getPartnerData().imageURL" width="200px" />
+    </mat-card>
+  </div>
+
+  <div>
+    <h2>
+      <strong> Sobre </strong>
+    </h2>
+    <p>
+      {{ getPartnerData().aboutText }}
+    </p>
+  </div>
+
+  <div>
+    <h2>
+      <strong> Projetos </strong>
+    </h2>
+
+    <mat-card
+      class="example-card"
+      *ngFor="let project of getPartnerData().projects"
+    >
+      <div class="inner">
+        <div class="left-panel">
+          <mat-card-header style="display: block">
+            <mat-chip-option [selected]="true" [disabled]="true" color="warn">
+              {{ project.status }}
+            </mat-chip-option>
+
+            <mat-card-title-group style="margin-top: 30px">
+              <mat-card-title
+                ><strong>{{ project.title }}</strong></mat-card-title
+              >
+            </mat-card-title-group>
+
+            <mat-card-content style="margin-top: 30px">
+              {{ project.aboutProject }}
+            </mat-card-content>
+          </mat-card-header>
+        </div>
+        <div class="right-panel">
+          <img
+            style="margin-left: auto; padding: 20px; object-fit: contain"
+            mat-card-xl-image
+            [src]="project.imageURLProject"
+          />
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
