@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
@@ -15,6 +15,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { PartnerComponent } from './views/partner/partner.component';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './ui/navbar/navbar.component';
 
 @NgModule({
   declarations: [AppComponent, LandingPageComponent],
@@ -22,7 +23,6 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
@@ -32,6 +32,7 @@ import { AboutComponent } from './about/about.component';
     PartnersComponent,
     PartnerComponent,
     AboutComponent,
+    NavbarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
