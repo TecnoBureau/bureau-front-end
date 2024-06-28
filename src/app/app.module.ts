@@ -15,6 +15,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { PartnerComponent } from './views/partner/partner.component';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
 import { AboutComponent } from './about/about.component';
+import { InscriptionsFormComponent } from './views/inscriptions-form/inscriptions-form.component';
 
 @NgModule({
   declarations: [AppComponent, LandingPageComponent],
@@ -32,6 +33,7 @@ import { AboutComponent } from './about/about.component';
     PartnersComponent,
     PartnerComponent,
     AboutComponent,
+    InscriptionsFormComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

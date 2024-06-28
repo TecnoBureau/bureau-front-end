@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom card */
+mat-card{
+    width: 900px;
+    margin: 3rem 0;
+}
+
+mat-card-header{
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-title{
+    font-size: 20px;
+}
+
+/* Custom button */
+.button{
+    font-size: 16px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+/* Custom Stepper */
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+
+.mat-mdc-form-field {
+    margin-top: 16px;
+}
+
+/* Custom form */
+.center-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Custom inputs step 2 */
+.mat-form-field-step2{
+    width: 100%;
+}
+
+
+/* Custom inputs step 1 */
+.row1, .row2, .row3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mat-form-field-name, .mat-form-field-email {
+    width: 55%;
+}
+
+.mat-form-field-cpf, .mat-form-field-phone{
+    width: 40%;
+}
+
+.mat-form-field-curse{
+    width: 40%;
+}
+
+.mat-form-field-ra, .mat-form-field-period{
+    width: 25%;
+}
+
+
+/* Custom responsive step 1 */
+@media (max-width: 800px) {
+    .row1, .row2, .row3{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mat-form-field-name, .mat-form-field-cpf, .mat-form-field-email, .mat-form-field-phone, .mat-form-field-curse, .mat-form-field-ra, .mat-form-field-period{
+        width: 100%;
+    }
+}

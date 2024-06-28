@@ -1,0 +1,133 @@
+<div class="container">
+  <mat-card color="primary">
+    <mat-card-header>
+      <mat-card-title>Formulario de Inscrição</mat-card-title>
+    </mat-card-header>
+    <mat-stepper [linear]="isLinear" #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Dados Pessoais</ng-template>
+
+          <div class="row1">
+            <mat-form-field appearance="fill" class="mat-form-field-name">
+              <mat-label>Nome completo</mat-label>
+              <input matInput formControlName="firstCtrl" required />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="mat-form-field-cpf">
+              <mat-label>cpf</mat-label>
+              <input matInput #cpf maxlength="11" />
+              <mat-hint align="end">{{ cpf.value.length }} / 11</mat-hint>
+            </mat-form-field>
+          </div>
+
+          <div class="row2">
+            <mat-form-field appearance="fill" class="mat-form-field-email">
+              <mat-label>Email</mat-label>
+              <input
+                type="email"
+                matInput
+                [formControl]="emailFormControl"
+                [errorStateMatcher]="matcher"
+                placeholder="Ex. pat@example.com"
+              />
+              <mat-error
+                *ngIf="
+                  emailFormControl.hasError('email') &&
+                  !emailFormControl.hasError('required')
+                "
+              >
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="mat-form-field-phone">
+              <mat-label>Celular</mat-label>
+              <span matPrefix>+55 &nbsp;</span>
+              <input type="tel" matInput placeholder="11 1234-5678" />
+            </mat-form-field>
+          </div>
+
+          <div class="row3">
+            <mat-form-field appearance="fill" class="mat-form-field-curse">
+              <mat-label>Curso</mat-label>
+              <input matInput />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="mat-form-field-ra">
+              <mat-label>RA</mat-label>
+              <input matInput />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="mat-form-field-period">
+              <mat-label>Periodo</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </div>
+
+          <div class="btn">
+            <button mat-button matStepperNext class="button">Próximo</button>
+          </div>
+        </form>
+      </mat-step>
+
+      <mat-step [stepControl]="secondFormGroup" label="Perguntas">
+        <form [formGroup]="secondFormGroup">
+          <p>
+            Disponibilidade de dias e horários para participação em visitas
+            técnicas, oficinas e capacitações
+          </p>
+          <mat-form-field appearance="fill" class="mat-form-field-step2">
+            <input matInput />
+          </mat-form-field>
+
+          <p>Resumo de suas experiências profissionais e experiências</p>
+          <mat-form-field appearance="fill" class="mat-form-field-step2">
+            <textarea matInput></textarea>
+          </mat-form-field>
+
+          <p>
+            Você possui interesse em concorrer à vaga de Estágio (no Escritório
+            modelo do Bureau localizado no Via Shopping), conforme
+            especificações do Edital?
+          </p>
+          <mat-radio-group aria-label="Selecione uma opção">
+            <mat-radio-button value="1">Sim</mat-radio-button>
+            <mat-radio-button value="2">Não</mat-radio-button>
+          </mat-radio-group>
+
+          <p>
+            Já participou do Programa Bureau - Escritório Modelo de Arquitetura
+            e Urbanismo, Engenharias e Tecnologia?
+          </p>
+          <mat-radio-group aria-label="Selecione uma opção">
+            <mat-radio-button value="1">Sim</mat-radio-button>
+            <mat-radio-button value="2">Não</mat-radio-button>
+          </mat-radio-group>
+
+          <p>
+            Se o aluno já participou do Programa anteriormente, informar o Ano e
+            semestre, e descrever as principais contribuições dadas no programa.
+            Obs: Se o aluno ainda não participou, informar: "Primeira inscrição"
+          </p>
+          <mat-form-field appearance="fill" class="mat-form-field-step2">
+            <input matInput />
+          </mat-form-field>
+
+          <p>Dúvidas ou sugestões</p>
+          <mat-form-field appearance="fill" class="mat-form-field-step2">
+            <textarea matInput></textarea>
+          </mat-form-field>
+
+          <div class="btn">
+            <button mat-button matStepperPrevious class="button">Voltar</button>
+            <button mat-button matStepperNext class="button">Enviar</button>
+          </div>
+        </form>
+      </mat-step>
+    </mat-stepper>
+  </mat-card>
+</div>
