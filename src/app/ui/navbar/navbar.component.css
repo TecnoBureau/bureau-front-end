@@ -1,0 +1,44 @@
+mat-toolbar {
+    top: 0;
+    z-index: 9999;
+    position: fixed;
+}
+
+.logo{
+    height: 40px;
+    margin-left: 20px;
+}
+  
+.sections{
+    margin-right: 20px;
+}
+  
+.web{
+    font-size: 16px;
+    margin: 5px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mobile {
+    display: none;
+}
+
+.web {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .mobile {
+      display: block;
+    }
+}
+
+@media (max-width: 799px) {
+    .web {
+      display: none;
+    }
+}
+  

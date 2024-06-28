@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <a href="/#/">
+    <img
+      class="logo"
+      src="../../assets/navbar/logo-una-bureau.png"
+      alt="logo una bureau"
+    />
+  </a>
+  <span class="example-spacer"></span>
+
+  <button
+    mat-flat-button
+    color="primary"
+    *ngFor="let item of menuItems"
+    (click)="goToSection(item.sectionId)"
+    class="web"
+  >
+    {{ item.displayName }}
+  </button>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="mobile">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button
+      mat-menu-item
+      *ngFor="let item of menuItems"
+      (click)="goToSection(item.sectionId)"
+    >
+      {{ item.displayName }}
+    </button>
+  </mat-menu>
+</mat-toolbar>
