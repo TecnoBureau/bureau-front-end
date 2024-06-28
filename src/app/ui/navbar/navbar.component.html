@@ -1,16 +1,18 @@
 <mat-toolbar color="primary">
-  <img
-    class="logo"
-    src="../../assets/navbar/logo-una-bureau.png"
-    alt="logo una bureau"
-  />
+  <a href="/#/">
+    <img
+      class="logo"
+      src="../../assets/navbar/logo-una-bureau.png"
+      alt="logo una bureau"
+    />
+  </a>
   <span class="example-spacer"></span>
 
   <button
     mat-flat-button
     color="primary"
     *ngFor="let item of menuItems"
-    (click)="goToSection(item.id)"
+    (click)="goToSection(item.sectionId)"
     class="web"
   >
     {{ item.displayName }}
@@ -23,7 +25,7 @@
     <button
       mat-menu-item
       *ngFor="let item of menuItems"
-      (click)="goToSection(item.id)"
+      (click)="goToSection(item.sectionId)"
     >
       {{ item.displayName }}
     </button>

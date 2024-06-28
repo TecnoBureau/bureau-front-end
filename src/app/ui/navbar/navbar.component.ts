@@ -20,16 +20,21 @@ import { Router } from '@angular/router';
   ],
 })
 export class NavbarComponent {
-  menuItems: { id: string; displayName: string }[] = [
-    { id: 'sobre', displayName: 'Sobre' },
-    { id: 'parceiros', displayName: 'Parceiros' },
-    { id: 'inscricoes', displayName: 'Inscrições' },
-    { id: 'contatos', displayName: 'Contatos' },
+  menuItems: { sectionId: string; displayName: string }[] = [
+    { sectionId: 'sobre', displayName: 'Sobre' },
+    { sectionId: 'parceiros', displayName: 'Parceiros' },
+    { sectionId: 'inscricoes', displayName: 'Inscrições' },
+    { sectionId: 'contatos', displayName: 'Contatos' },
   ];
 
   constructor(private router: Router) {}
 
   goToSection(sectionId: string) {
-    this.router.navigate([], { fragment: sectionId });
+    this.router.navigate([`/${sectionId}`]).then(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
   }
 }
