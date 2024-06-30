@@ -5,6 +5,7 @@ import {
   FormGroupDirective,
   NgForm,
   Validators,
+  FormGroup,
 } from '@angular/forms';
 import { MatStepperModule } from '@angular/material/stepper';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -14,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-inscriptions-form',
@@ -27,26 +29,36 @@ import { ErrorStateMatcher } from '@angular/material/core';
     MatCardModule,
     MatButtonModule,
     MatRadioModule,
+    CommonModule,
   ],
   standalone: true,
 })
 export class InscriptionsFormComponent {
-  firstFormGroup = this._formBuilder.group({
+  /* firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],
   });
   secondFormGroup = this._formBuilder.group({
     secondCtrl: ['', Validators.required],
   });
-  isLinear = false;
+  isLinear = false; */
 
-  constructor(private _formBuilder: FormBuilder) {}
+  /*   constructor(private _formBuilder: FormBuilder) {}
 
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,
-  ]);
+  ]); */
 
   matcher = new MyErrorStateMatcher();
+
+  myForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.myForm = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+    });
+  }
 }
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
