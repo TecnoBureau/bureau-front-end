@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,10 +17,12 @@ import { PartnerComponent } from './views/partner/partner.component';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
+import { FooterComponent } from './ui/footer/footer.component';
 
 @NgModule({
   declarations: [AppComponent, LandingPageComponent],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -33,6 +36,7 @@ import { NavbarComponent } from './ui/navbar/navbar.component';
     PartnerComponent,
     AboutComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
