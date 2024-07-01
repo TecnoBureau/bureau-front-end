@@ -1,0 +1,31 @@
+mat-toolbar {
+    z-index: 9999;
+    flex-direction: column;
+    height: max-content;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 40px;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    margin-right: 20px;
+}
+
+p{
+    font-size: 14px;
+    margin: 8px 0;
+}
