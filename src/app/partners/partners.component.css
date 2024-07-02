@@ -31,7 +31,7 @@ button {
 }
 
 .image-contact {
-  background: url("src/assets/imagem-entre-contato.png") no-repeat bottom;
+  background: url("src/assets/contact-page/imagem-entre-contato.png") no-repeat bottom;
   background-size: cover;
   width: 50%;
   height: 100%;
