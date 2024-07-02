@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100% - 136px);
+  height: auto;
   padding: 2rem 4rem 0rem;
   background: url("src/assets/wave3.svg") no-repeat bottom;
   background-color: #28a9bc;
@@ -51,18 +51,26 @@ img{
     flex-direction: column;
     justify-content: end;
   }
+  mat-divider{
+    margin-top: 60px;
+  }
   mat-card {
     max-width: 500px;
     margin-bottom: 30px;
   }
   .image-contact{
-    height: 550px;
+    margin-top: 20px;
+    height: 500px;
   }
 }
 
 @media (max-width: 759px) {
   mat-card {
     max-width: 100%;
+    margin-bottom: 60px;
+  }
+  mat-divider{
+    margin-top: 60px;
   }
   .image-contact{
     display: none;
