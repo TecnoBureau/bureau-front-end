@@ -1,8 +1,7 @@
 .container {
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 2rem 4rem 0rem;
+  height: 70%;
+  padding: 2rem 4rem 2rem;
   background: url("src/assets/wave2.svg") no-repeat bottom;
 }
 
@@ -30,25 +29,18 @@ button {
   width: 100px;
 }
 
-.image-contact {
-  background: url("src/assets/contact-page/imagem-entre-contato.png") no-repeat bottom;
-  background-size: cover;
-  width: 50%;
-  height: 100%;
-}
-
 .logo-cmd {
   width: 200;
   height: 400;
 }
 
 .logo-ribeirao {
-  background: url("src/assets/logos/brasao-pref-ribeirao.png");
+  background: url("src/assets/partners-page/brasao-pref-ribeirao.png");
   background-size: cover;
 }
 
 .logo-carrancas {
-  background: url("src/assets/logos/brasao-pref-carrancas.png");
+  background: url("src/assets/partners-page/brasao-pref-carrancas.png");
   background-size: cover;
 }
 
@@ -73,6 +65,7 @@ mat-grid-tile {
   object-fit: contain;
   transition: transform 0.3s;
   width: 200px;
+  border-radius: 15%;
 }
 
 .grid-item img:hover {
@@ -81,4 +74,23 @@ mat-grid-tile {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   border-radius: 15%;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .container{
+    height: auto;
+    justify-content: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .grid-item {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .grid-item img {
+    width: 40%;
+  }
 }

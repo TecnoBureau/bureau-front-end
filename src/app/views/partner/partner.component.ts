@@ -43,28 +43,28 @@ export class PartnerComponent implements OnInit {
             conhecimento prévio e das possibilidades de parcerias locais para a
             prestação de serviços diferenciados, bem como da corresponsabilidade dos
             envolvidos.`,
-          imageURL: `../../../assets/logos/logo-cmd.png`,
+          imageURL: `../../../assets/partners-page/logo-cmd.png`,
           projects: [
             {
               title: 'CDM',
               status: 'Em Desenvolvimento',
               aboutProject:
                 'A CDM é uma organização sem fins lucrativos, com sede em Belo Horizonte, que há mais de três décadas realiza ações de planejamento; gestão; execução; e avaliação de programas e projetos sociais',
-              imageURLProject: `../../../assets/logos/logo-cmd.png`,
+              imageURLProject: `../../../assets/partners-page/logo-cmd.png`,
             },
           ],
         };
       case 'carrancas':
         return {
           aboutText: `Carrancas é um município localizado no estado de Minas Gerais, Brasil. Sua população recenseada em 2022 era de 4.049 habitantesAd1. A cidade é conhecida por suas cachoeiras, poços, grutas e serras. Em 2008, a Revista Encontro de Belo Horizonte elegeu Carrancas como a 4ª Maravilha de Minas GeraisAd1. Rodeada pela Mata Atlântica e Cerrado, é um destino ideal para descansar e explorar a história mineira. A paróquia Nossa Senhora da Conceição pertence à Diocese de São João del-ReiAd1. A cidade está localizada na divisa com o sul de Minas Gerais, a cerca de 80 km de São João del-Rei, 280 km de Belo Horizonte e 100 km de Caxambu, cidade do Circuito das Águas2. Se você visitar Carrancas, encontrará um lugar incrível com cachoeiras maravilhosas e pouco exploradas`,
-          imageURL: `../../../assets/logos/brasao-pref-carrancas.png`,
+          imageURL: `../../../assets/partners-page/brasao-pref-carrancas.png`,
           projects: [
             {
               title: 'Prefeitura de Carrancas',
               status: 'Em Desenvolvimento',
               aboutProject:
                 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo delectus pariatur molestias quos doloribus sit a aut asperiores, ipsum exercitationem, nesciunt ducimus modi hic quod tenetur ratione officiis saepe. Sunt.',
-              imageURLProject: `../../../assets/logos/brasao-pref-carrancas.png`,
+              imageURLProject: `../../../assets/partners-page/brasao-pref-carrancas.png`,
             },
           ],
         };
@@ -72,14 +72,14 @@ export class PartnerComponent implements OnInit {
       case 'ribeirao-das-neves':
         return {
           aboutText: `Ribeirão das Neves é um município localizado no estado de Minas Gerais, Brasil. Sua população recenseada em 2022 era de 343.000 habitantes. A cidade está situada na Região Metropolitana de Belo Horizonte e faz parte do Colar Metropolitano Norte. Aqui estão alguns pontos relevantes sobre Ribeirão das Neves:`,
-          imageURL: `../../../assets/logos/brasao-pref-ribeirao.png`,
+          imageURL: `../../../assets/partners-page/brasao-pref-ribeirao.png`,
           projects: [
             {
               title: 'CDM',
               status: 'Em Desenvolvimento',
               aboutProject:
                 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo delectus pariatur molestias quos doloribus sit a aut asperiores, ipsum exercitationem, nesciunt ducimus modi hic quod tenetur ratione officiis saepe. Sunt.',
-              imageURLProject: `../../../assets/logos/brasao-pref-ribeirao.png`,
+              imageURLProject: `../../../assets/partners-page/brasao-pref-ribeirao.png`,
             },
           ],
         };
