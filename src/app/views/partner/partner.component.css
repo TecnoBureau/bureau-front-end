@@ -1,8 +1,8 @@
 .container {
   align-items: center;
   justify-content: space-between;
-  height: 100%;
-  padding: 2rem 4rem 0rem;
+  height: auto;
+  padding: 6rem 4rem 2rem;
 }
 
 .example-card {
@@ -27,6 +27,15 @@
 
 .inner {
   display: flex;
+}
+
+@media(max-width: 768px){
+  .container {
+    padding: 6rem 2rem 2rem;
+  }
+  .right-panel {
+    display: none !important;
+  }
 }
 
 .left-panel,
